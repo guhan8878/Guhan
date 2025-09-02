@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Academic Strengths & Favorite Subjects</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7fb;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4a90e2, #357ABD);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #357ABD;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #4a90e2;
+    }
+
+    .card p {
+      margin: 0.5rem 0 0;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      background: #357ABD;
+      color: white;
+    }
+
+    /* Button for JS interaction */
+    #revealBtn {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      background: #4a90e2;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    #revealBtn:hover {
+      background: #357ABD;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Academic Strengths & Favorite Subjects</h1>
+    <p>A snapshot of what I excel at and love to learn</p>
+  </header>
+
+  <div class="container">
+    <h2>Academic Strengths</h2>
+    <div class="card-grid" id="strengths">
+      <div class="card">
+        <h3>Critical Thinking</h3>
+        <p>I analyze problems logically and explore multiple solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Team Collaboration</h3>
+        <p>I enjoy working in groups and contributing ideas effectively.</p>
+      </div>
+      <div class="card">
+        <h3>Time Management</h3>
+        <p>I balance academics, extracurriculars, and personal growth.</p>
+      </div>
+    </div>
